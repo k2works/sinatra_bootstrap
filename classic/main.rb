@@ -24,62 +24,77 @@ get '/' do
 end
 
 get '/jumbotron' do
+  @custom_css = 'jumbotron.css'
   erb :'/jumbotron/index'
 end
 
 get '/carousel' do
+  @custom_css = 'carousel.css'
   erb :'/carousel/index'
 end
 
 get '/starter-template' do
+  @custom_css = 'starter-template.css'
   erb :'/starter-template/index'
 end
 
 get '/grid' do
+  @custom_css = 'grid.css'
   erb :'/grid/index'
 end
 
 get '/jumbotron-narrow' do
+  @custom_css = 'jumbotron-narrow.css'
   erb :'/jumbotron-narrow/index'
 end
 
 get '/justified-nav' do
+  @custom_css = 'justified-nav.css'
   erb :'/justified-nav/index'
 end
 
 get '/navbar-fixed-top' do
+  @custom_css = 'navbar-fixed-top.css'
   erb :'/navbar-fixed-top/index'
 end
 
 get '/navbar-static-top' do
+  @custom_css = 'navbar-static-top.css'
   erb :'/navbar-static-top/index'
 end
 
 get '/navbar' do
+  @custom_css = 'navbar.css'
   erb :'/navbar/index'
 end
 
 get '/non-responsive' do
+  @custom_css = 'non-responsive.css'
   erb :'/non-responsive/index'
 end
 
 get '/offcanvas' do
+  @custom_css = 'offcanvas.css'
   erb :'/offcanvas/index'
 end
 
 get '/signin' do
+  @custom_css = 'signin.css'
   erb :'signin/index'
 end
 
 get '/sticky-footer-navbar' do
+  @custom_css = 'sticky-footer-navbar.css'
   erb :'/sticky-footer-navbar/index'
 end
 
 get '/sticky-footer' do
+  @custom_css = 'sticky-footer.css'
   erb :'/sticky-footer/index'
 end
 
 get '/theme' do
+  @custom_css = 'theme.css'
   erb :'/theme/index'
 end
 
