@@ -1,5 +1,4 @@
 require 'sinatra'
-#require 'sinatra/reloader'
 
 before do
   @title = 'Sample'
@@ -12,6 +11,12 @@ before do
   @navbar_fixed_top_link = '/navbar-fixed-top'
   @navbar_static_top_link = '/navbar-static-top'
   @navbar_link = '/navbar'
+  @non_responsive_link = '/non-responsive'
+  @offcanvas_link = '/offcanvas'
+  @signin_link = '/signin'
+  @sticky_footer_navbar_link = '/sticky-footer-navbar'
+  @sticky_footer_link = '/sticky-footer'
+  @theme_link = '/theme'
 end
 
 get '/' do
@@ -51,7 +56,31 @@ get '/navbar-static-top' do
 end
 
 get '/navbar' do
-  erb :'navbar/index'
+  erb :'/navbar/index'
+end
+
+get '/non-responsive' do
+  erb :'/non-responsive/index'
+end
+
+get '/offcanvas' do
+  erb :'/offcanvas/index'
+end
+
+get '/signin' do
+  erb :'signin/index'
+end
+
+get '/sticky-footer-navbar' do
+  erb :'/sticky-footer-navbar/index'
+end
+
+get '/sticky-footer' do
+  erb :'/sticky-footer/index'
+end
+
+get '/theme' do
+  erb :'/theme/index'
 end
 
 after do
