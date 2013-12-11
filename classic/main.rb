@@ -17,6 +17,8 @@ before do
   @sticky_footer_navbar_link = '/sticky-footer-navbar'
   @sticky_footer_link = '/sticky-footer'
   @theme_link = '/theme'
+  @modern_business_link = '/modern-business'
+  @stylish_portfolio_link = '/stylish-portfolio'
 end
 
 get '/' do
@@ -96,6 +98,18 @@ end
 get '/theme' do
   @custom_css = 'theme.css'
   erb :'/theme/index'
+end
+
+get '/modern-business' do
+  @custom_css = 'modern-business.css'
+  @custom_js = 'modern-business.js'
+  erb :'/modern-business/index'
+end
+
+get '/stylish-portfolio' do
+  @custom_css = 'stylish-portfolio.css'
+  @custom_js = 'stylish-portfolio.js'  
+  erb :'/stylish-portfolio/stylish-portfolio'
 end
 
 after do
